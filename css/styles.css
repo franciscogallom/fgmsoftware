@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-800 {
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.parrafo {
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 95%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12 columnas en partes iguales */
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+  gap: 10px;
+  /* espacio entre las columnas */
+  overflow: hidden;
+  align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  height: 40px;
+  top: 10px;
+  left: 38.5%;
+  background-color: transparent;
+  border-radius: 10px;
+  z-index: 50;
+}
+
+.nav-item i {
+  color: #fff;
+  margin: 10px 25px;
+  font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.nav-item i:hover {
+  scale: 1.2;
+  transform: rotate(360deg);
+}
+
+.change-color {
+  background-image: linear-gradient(to right, #43e97b 0%, #cf0 100%);
+}
+
+.header {
+  height: 600px;
+  background: linear-gradient(60deg, #191919 50%, #fff 50%);
+}
+
+.img-hero {
+  width: 100%;
+  height: auto;
+  grid-column: 8/13;
+}
+
+.textos-hero {
+  color: #cf0;
+  grid-column: 1/7;
+  padding-right: 50px;
+}
+.textos-hero p {
+  margin-top: 0.5em;
+  text-align: justify;
+}
+
+.cta {
+  width: 130px;
+  background: #191919;
+  color: #cf0;
+  display: inline-block;
+  /* si tiene propiedas de linea no podemos dar padding ni width */
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #cf0;
+  transition: all 0.3s ease-in;
+}
+.cta:hover {
+  background: #cf0;
+  color: #191919;
+  transform: rotate(-4deg);
+}
+
+.me {
+  height: 500px;
+}
+
+.img-me {
+  width: 100%;
+  height: auto;
+  grid-column: 1/7;
+  grid-row: 1/-1;
+}
+
+.text-me {
+  color: #191919;
+  grid-column: 7/13;
+  grid-row: 1/-1;
+}
+.text-me p {
+  margin-top: 1em;
+  text-align: justify;
+}
+.text-me p span {
+  -webkit-text-decoration: underline 3px #cf0;
+          text-decoration: underline 3px #cf0;
+}
+
+.service {
+  height: 370px;
+  background: linear-gradient(180deg, #fff 50%, #191919 50%);
+}
+
+.items {
+  grid-column: 1/-1;
+  /* posiciona desde la primera hasta la ultima */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  /* se separan en partes iguales */
+  align-items: center;
+  flex-wrap: wrap;
+  /* si se sobrepasa del contenedor, ponelo abajo */
+}
+
+.item {
+  width: 30%;
+  /* como son tres, le pongo 30% a cada uno */
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 220px;
+  padding: 20px 10px;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+.item:hover {
+  scale: 1.01;
+  transform: translateY(-25px);
+}
+.item:hover [class^="fas fa"] {
+  color: #cf0;
+  scale: 1.2;
+}
+.item:hover .titulo-services {
+  -webkit-text-decoration: underline 3px #cf0;
+          text-decoration: underline 3px #cf0;
+}
+
+[class^="fas fa"] {
+  /* todos los elementos con la clase far fa*/
+  font-size: 50px;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.titulo-services {
+  margin: 20px 0;
+  transition: all 1s ease-in-out;
+  -webkit-text-decoration: underline 3px #fff;
+          text-decoration: underline 3px #fff;
+}
+
+.about {
+  background: #191919;
+  color: #fff;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+.textos-about-us {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.textos-about-us .parrafo {
+  margin-top: 10px;
+  color: #cf0;
+}
+
+.numbers {
+  grid-column: 1/-1;
+  /* ocupa todas las columnas */
+  display: flex;
+  /* se ponen uno al lado del otro */
+  justify-content: space-evenly;
+  /* se separan en partes iguales */
+  flex-wrap: wrap;
+  /* si se juntan mucho, mandalo abajo */
+}
+
+.number {
+  text-align: center;
+  font-size: 30px;
+  width: 22%;
+}
+
+.mission {
+  padding: 80px 0;
+}
+.mission h3 {
+  color: #cf0;
+  font-size: 2em;
+  text-shadow: 1px 1px 4px #191919;
+}
+.mission span {
+  color: #191919;
+  -webkit-text-decoration: underline 3px #cf0;
+          text-decoration: underline 3px #cf0;
+}
+
+.textos-mission {
+  grid-column: 7/13;
+  grid-row: 1/-1;
+  /* si no ponia esto aca y en la imagen me creaba dos filas */
+  margin-bottom: 20px;
+}
+
+.img-mission {
+  grid-column: 1/7;
+  grid-row: 1/-1;
+}
+
+footer {
+  background: #191919;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.textos-footer {
+  grid-column: 1/-1;
+  margin-bottom: 30px;
+}
+
+[class^=footer-item] {
+  grid-column: span 3;
+}
+[class^=footer-item] a {
+  color: white;
+  font-size: 30px;
+}
+
+.svg-footer {
+  margin-bottom: -50px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: auto;
+    background: #191919;
+    padding-bottom: 50px;
+  }
+
+  .grid {
+    grid-gap: 30px;
+  }
+
+  .img-hero, .textos-hero {
+    /* que se ponga uno abajo del otro */
+    grid-column: 1/-1;
+  }
+
+  .img-hero {
+    text-align: center;
+  }
+
+  .textos-hero {
+    margin-top: 40px;
+  }
+
+  .service {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .item {
+    width: 60%;
+    margin: 40px 0;
+    height: auto;
+    padding: 40px;
+  }
+
+  .img-mission {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .textos-mission {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-self: center;
+  }
+
+  h3, p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .img-me, .text-me {
+    text-align: center;
+    grid-row: unset;
+    grid-column: 1/13;
+  }
+
+  .text-me p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img {
+    max-width: 170px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax 180px, 1fr);
+    /* le decis que se ajuste */
+  }
+
+  .item {
+    width: 90%;
+    flex-shrink: 0;
+  }
+
+  .number {
+    width: 55%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+
+  .textos-mission h3 {
+    margin: 15px;
+  }
+
+  [class^=footer-item] {
+    grid-column: 1/-1;
+  }
+}

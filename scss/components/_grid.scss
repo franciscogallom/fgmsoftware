@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr); /* 12 columnas en partes iguales */
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px; /* espacio entre las columnas */
+    overflow: hidden;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    height: 40px;
+    top: 10px;
+    left: 38.5%;
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+.nav-item i {
+    color: $color2;
+    margin: 10px 25px;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+    
+    &:hover {
+        scale: (1.2);
+        transform: rotate(360deg);
+    }
+}
+
+.change-color {
+    background-image: linear-gradient(to right, #43e97b 0%, $color3 100%);
+}

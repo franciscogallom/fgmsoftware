@@ -1,0 +1,25 @@
+.mission {
+    padding: 80px 0;
+
+    h3 {
+        color: $color3;
+        font-size: 2em;
+        text-shadow: 1px 1px 4px $color1;
+    }
+
+    span {
+        color: $color1;
+        text-decoration: underline 3px $color3;
+    }
+}
+
+.textos-mission {
+    grid-column: 7/13;
+    grid-row: 1/-1; /* si no ponia esto aca y en la imagen me creaba dos filas */
+    margin-bottom: 20px;
+}
+
+.img-mission {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+}

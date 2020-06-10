@@ -1,0 +1,40 @@
+.header {
+    height: 600px;
+    background: linear-gradient(60deg, $color1 50%, $color2 50%);
+}
+
+.img-hero {
+    width: 100%;
+    height: auto;
+    grid-column: 8/13;
+}
+
+.textos-hero {
+    color: $color3;
+    grid-column: 1/7;
+    padding-right: 50px;
+
+    p {
+        margin-top: .5em;
+        text-align: justify;
+    }
+}
+
+.cta {
+    width: 130px;
+    background: $color1;
+    color: $color3;
+    display: inline-block; /* si tiene propiedas de linea no podemos dar padding ni width */
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid $color3;
+    transition: all .3s ease-in;
+
+    &:hover {
+        background: $color3;
+        color: $color1;
+        transform: rotate(-4deg);
+    }
+}

@@ -1,0 +1,51 @@
+.service {
+    height: 370px;
+    background: linear-gradient(180deg, $color2 50%, $color1 50%);
+}
+
+.items {
+    grid-column: 1/-1; /* posiciona desde la primera hasta la ultima */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly; /* se separan en partes iguales */
+    align-items: center;
+    flex-wrap: wrap; /* si se sobrepasa del contenedor, ponelo abajo */
+}
+
+.item {
+    width: 30%; /* como son tres, le pongo 30% a cada uno */
+    background: $color2;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    height: 220px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        scale: (1.01);
+        transform: translateY(-25px);
+
+        [class^="fas fa"] {
+            color: $color3;
+            scale: 1.2;
+        }
+
+        .titulo-services {
+            text-decoration: underline 3px $color3; 
+        }
+    }
+}
+
+[class^="fas fa"] { /* todos los elementos con la clase far fa*/
+    font-size: 50px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.titulo-services {
+    margin: 20px 0;
+    transition: all 1s ease-in-out;
+    text-decoration: underline 3px $color2;
+}

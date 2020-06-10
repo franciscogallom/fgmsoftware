@@ -1,0 +1,29 @@
+.about {
+    background: $color1;
+    color: $color2;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.textos-about-us {
+    grid-column: 1/-1;
+    text-align: center;
+
+    .parrafo {
+        margin-top: 10px;
+        color: $color3;
+    }
+}
+
+.numbers {
+    grid-column: 1/-1; /* ocupa todas las columnas */
+    display: flex; /* se ponen uno al lado del otro */
+    justify-content: space-evenly; /* se separan en partes iguales */
+    flex-wrap: wrap; /* si se juntan mucho, mandalo abajo */
+}
+
+.number {
+    text-align: center;
+    font-size: 30px;
+    width: 22%;
+}

@@ -1,0 +1,24 @@
+footer {
+    background: $color1;
+    color: $color2;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.textos-footer {
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+}
+
+[class^="footer-item"] { 
+    grid-column: span 3;
+
+    a {
+        color: white;
+        font-size: 30px;
+    }
+}
+
+.svg-footer {
+    margin-bottom: -50px;
+}

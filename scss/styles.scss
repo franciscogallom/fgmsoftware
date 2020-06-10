@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color1: #191919;
+$color2: #fff;
+$color3: #cf0;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-800 {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.parrafo {
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 95%;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
+
+@import 'components/grid';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/me';
+@import 'components/services';
+@import 'components/about';
+@import 'components/mission';
+@import 'components/footer';
+@import 'media/max800';
+@import 'media/max700';
+@import 'media/max400';
