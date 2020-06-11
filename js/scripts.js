@@ -8,10 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// SMOOTH SCROLLING //
+// SMOOTH SCROLLING
 
 
-// CHANGE NAVBAR //
+// CHANGE NAVBAR
 
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
@@ -22,4 +22,36 @@ $(window).on('scroll', function(){
     }
 }) 
 
-// CHANGE NAVBAR //
+// CHANGE NAVBAR
+
+
+// SCROLL TRIGER
+
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".header",
+//         start: "center center", // La animacion empieza en este punto
+//         end: "bottom top", // La animacion termina en este punto
+//         markers: false,
+//         scrub : true
+//     }
+// })
+// .from(".title-me", {y : innerWidth * 1})
+// .from(".p-me", {y : innerWidth * 1})
+// .from(".imagen", {x : innerWidth * -1})
+
+
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".me",
+//         start: "top top", // La animacion empieza en este punto
+//         end: "center bottom", // La animacion termina en este punto
+//         markers: true,
+//         scrub : true
+//     }
+// })
+// .from(".i-1", {y : innerWidth * 1})
+// .from(".i-2", {y : innerWidth * 1})
+// .from(".i-3", {y : innerWidth * 1})
+
+// SCROLL TRIGER
