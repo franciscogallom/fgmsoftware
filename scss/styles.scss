@@ -37,13 +37,15 @@ body {
     }
 }
 
+@import 'components/scrollTr';
 @import 'components/grid';
 @import 'components/nav';
 @import 'components/header';
 @import 'components/me';
 @import 'components/services';
-@import 'components/about';
-@import 'components/mission';
+@import 'components/section';
+@import 'components/responsive';
+@import 'components/marketing';
 @import 'components/footer';
 @import 'media/max800';
 @import 'media/max700';

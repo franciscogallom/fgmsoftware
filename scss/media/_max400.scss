@@ -1,6 +1,18 @@
 @media screen and (max-width: 400px) {   
+    .header {
+        height: 700px;
+
+        .textos-hero {
+            margin-top: 10px;
+        }
+    }
+    
     .img {
         max-width: 170px;
+    }
+
+    .img-hero, .img-me {
+        display: none;
     }
 
     .grid {
@@ -18,7 +30,7 @@
         padding-bottom: 5px;
     }
 
-    .textos-mission h3 {
+    .textos-responsive h3 {
         margin: 15px;;
     }
 

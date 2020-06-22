@@ -28,11 +28,12 @@
     <header id="home" class="header">
         <div class="grid">
             <div class="textos-hero">
-                <h1 class="weight-800">
+                <h1 id="text-h" class="weight-800">
                     Desarrollo de sitios web a medida.
                 </h1>
-                <p class="parrafo">"Si tu negocio no está en internet, no existe". Y no lo digo yo, lo dijo Bill Gates.</p>
+                <p class="parrafo" id="parrafo">"Si tu negocio no está en internet, no existe".</p>
                 <a href="#contact" class="cta">Contactame.</a>
+                <button id="btn-show">¿Quién dijo eso?</button>
             </div>
             <div class="img-hero">
                 <img class="img" src="img/mobile.svg" alt="Foto principal">
@@ -45,11 +46,11 @@
         <section class="me" id="about">
             <div class="grid">
                 <div class="text-me">
-                    <h1 class="weight-800 title-me">
+                    <h1 class="weight-800 title-me reveal">
                         Me presento. <i class="fas fa-address-card"></i>
                     </h1>
-                    <p class="parrafo p-me">Soy estudiante de <span>Ingeniería en Computación</span> en la Facultad de Ingeniería y en la Facultad de Informática de la UNLP. Para desarrollar el <span>frontend</span> de tu sitio web utilizo tecnologías tales como HTML, CSS, Bootstrap, SASS y JavaScript. También podemos construir el <span>backend</span> de tu sitio utilizando PHP y MySQL.</p>
-                    <p class="p-me">A continuación te dejo tres simples pasos para que <span>construyamos juntos tu nuevo proyecto!</span></p>
+                    <p class="parrafo p-me reveal2">Soy estudiante de <span>Ingeniería en Computación</span> en la Facultad de Ingeniería y en la Facultad de Informática de la UNLP. Para desarrollar el <span>frontend</span> de tu sitio web utilizo tecnologías como HTML, CSS, Bootstrap, SASS, JavaScript y React. También podemos construir el <span>backend</span> de tu sitio utilizando PHP, Node.JS y el sistema de gestión de bases de datos MySQL.</p>
+                    <p class="p-me reveal2">A continuación te dejo tres simples pasos para que <span>construyamos juntos tu nuevo proyecto!</span></p>
                 </div>
                 <div class="img-me">
                     <img class="img imagen" src="img/student.svg" alt="Estudiante">
@@ -80,9 +81,9 @@
         </section>
     
 
-        <section class="about">
+        <section class="section">
             <div class="grid">
-                <div class="textos-about-us">
+                <div class="textos-section">
                     <h2 class="subtitulo">ASÍ DE SIMPLE!</h2>
                     <p class="parrafo">Es un sistema ágil, creativo e innovador, que se adapta a todo tipo de dispositivos (computadores, móviles y tablets), para atraer e impactar potenciales clientes.</p>
                 </div>
@@ -96,21 +97,55 @@
         </section>
     
 
-        <section class="mission grid">
-            <div class="textos-mission">
-                <div class="texto-mission">
-                    <h3>Responsive web design.</h3>
-                    <p>El diseño web adaptable es una <span>filosofía</span> de diseño y desarrollo cuyo objetivo es <span>adaptar</span> la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en <span>multitud de dispositivos</span> como tablets, smartphones, libros electrónicos, portátiles, PC, etcétera. Esta tecnología pretende que con un <span>único diseño web</span>, todo se vea correctamente en <span>cualquier dispositivo.</span></p>
+        <section class="responsive grid">
+            <div class="textos-responsive">
+                <div class="texto-responsive">
+                    <h3 class="text-responsive reveal2">Responsive web design.</h3>
+                    <p class="p-responsive reveal">El diseño web adaptable es una <span>filosofía</span> de diseño y desarrollo cuyo objetivo es <span>adaptar</span> la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en <span>multitud de dispositivos</span> como tablets, smartphones, libros electrónicos, portátiles, PC, etcétera. Esta tecnología pretende que con un <span>único diseño web</span>, todo se vea correctamente en <span>cualquier dispositivo.</span></p>
                 </div>
             </div>
-            <div class="img-mission">
-                <img src="img/responsive.svg" alt="Poner algo" class="img">
+            <div class="img-responsive">
+                <img src="img/responsive.svg" alt="Imagen responsive" class="img">
+            </div>
+        </section>
+
+
+        <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191919" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,160C672,149,768,75,864,53.3C960,32,1056,64,1152,85.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+        <section class="marketing">
+            <div class="texts-m">
+                <h1 class="title-marketing">5 razones para tener un sitio web.</h1>
+                <span class="number-m" id="number-m1">1</span>
+                <div class="cont-m">
+                    <h2 class="title-m reveal3">Tu competencia tiene un sitio web<i class="fas fa-balance-scale-right"></i></h2>
+                    <p class="text-m reveal2">Todo se trata de tomar ventaja del mercado y no quedarse atrás. Si ellos tienen una herramienta que tú no, simplemente podrán ofrecer más opciones innovadoras y atractivas a los consumidores.</p>
+                </div>
+                <span class="number-m" id="number-m2">2</span>
+                <div class="cont-m">
+                    <h2 class="title-m reveal3">Accesibilidad para todos<i class="fas fa-universal-access"></i></h2>
+                    <p class="text-m reveal2">No todas las personas poseen una red social. No todas las personas tienen la posibilidad de desplazarse hasta un local físico. Un sitio web permite a los consumidores estar a un click de distancia desde la comodidad de su computadora, tablet o celular.</p>
+                </div>
+                <span class="number-m" id="number-m3">3</span>
+                <div class="cont-m">
+                    <h2 class="title-m reveal3">Mejora la comunicación con los clientes<i class="far fa-paper-plane"></i></h2>
+                    <p class="text-m reveal2">Información de productos, servicios, disponibilidad y precios, son las preguntas frecuentes de cualquier negocio. Una plataforma web te permite mantener esta informacion siempre al alcance de las personas.</p>
+                </div>
+                <span class="number-m" id="number-m4">4</span>
+                <div class="cont-m">
+                    <h2 class="title-m reveal3">Automatización de procesos<i class="fas fa-robot"></i></h2>
+                    <p class="text-m reveal2">Todo puede ocurrir de manera automática. Pagos, órdenes, manejo de inventario, entre otros. Son algunas de las cosas que podrás olvidar para invertir más tiempo en la calidad de tus productos o servicios.</p>
+                </div>
+                <span class="number-m" id="number-m5">5</span>
+                <div class="cont-m">
+                    <h2 class="title-m reveal3">Alcanza nuevos mercados<i class="fas fa-search-dollar"></i></h2>
+                    <p class="text-m reveal2">Una vez inviertes en una plataforma web, ya no eres un pequeño negocio, ahora tienes el potencial de ser visto por millones de usuarios alrededor del mundo.</p>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191919" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,160C672,149,768,75,864,53.3C960,32,1056,64,1152,85.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
     <footer id="contact">
         <div class="grid">
@@ -132,9 +167,9 @@
         </div>
     </footer>
 
-    <!-- scroll triger
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script> -->
+    <!-- scroll triger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
     
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/bba96a7ea9.js" crossorigin="anonymous"></script>

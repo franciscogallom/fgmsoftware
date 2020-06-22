@@ -1,0 +1,36 @@
+.marketing {
+    text-align: center;
+    padding-bottom:300px;
+    background: $color1;
+    margin-top: 20px;
+
+    .title-marketing {
+        font-size: 75px;
+        color: $color2;
+    }
+
+    .cont-m {
+        margin: 100px 0;
+    }
+    
+    .number-m{
+        font-size: 150px;
+        color: $color3;
+        text-shadow: 1px 1px 20px $color3;
+    }
+
+    .title-m {
+        text-shadow: 2px 2px 2px $color1;
+        font-size: 50px;
+        color: $color3;
+
+        i {
+            margin-left: 15px;
+        }
+    }
+
+    .text-m {
+        margin: 10px 22%;
+        color: $color2;
+    }
+}
