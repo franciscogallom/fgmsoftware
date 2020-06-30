@@ -10,15 +10,15 @@
         grid-gap: 30px;
     }
 
-    .img-hero, .textos-hero { /* que se ponga uno abajo del otro */
+    .img-header, .textos-header { /* que se ponga uno abajo del otro */
         grid-column: 1/-1;
     }
 
-    .img-hero {
+    .img-header {
         text-align: center;
     }
 
-    .textos-hero {
+    .textos-header {
         margin-top: 40px;
     }
 

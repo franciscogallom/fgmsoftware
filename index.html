@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>FGM</title>
+    <link rel="icon" href="img/logo.png">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- fuentes -->
@@ -13,30 +15,34 @@
 
 </head>
 
-<body>
+<body class="body">
 
     <nav class="navbar">
         <ul class="nav-items">
-            <a href="#home" class="nav-item"><i class="fas fa-home"></i></a>
-            <a href="#about" class="nav-item"><i class="fas fa-user-circle"></i></a>
-            <a href="#service" class="nav-item"><i class="fas fa-rocket"></i></a>
-            <a href="#contact" class="nav-item"><i class="fas fa-at"></i></a>
+            <li>
+                <i class="fas fa-home"></i><a href="#home" class="nav-item">Home</a>    
+            </li>
+            <li>
+                <i class="fas fa-user-circle"></i><a href="#about" class="nav-item">About us</a>
+            </li>
+            <li>
+                <i class="fas fa-question"></i><a href="#reasons" class="nav-item">Why?</a>
+            </li>
+            <li>
+                <i class="fas fa-at"></i><a href="#contact" class="nav-item">Contact</a>
+            </li>
         </ul>
     </nav>
 
 
     <header id="home" class="header">
         <div class="grid">
-            <div class="textos-hero">
-                <h1 id="text-h" class="weight-800">
-                    Desarrollo de sitios web a medida.
-                </h1>
-                <p class="parrafo" id="parrafo">"Si tu negocio no está en internet, no existe".</p>
-                <a href="#contact" class="cta">Contactame.</a>
-                <button id="btn-show">¿Quién dijo eso?</button>
+            <div class="textos-header">
+                <h1 id="text-h"></h1>
+                <a href="#contact" class="cta">Contact us.</a>
             </div>
-            <div class="img-hero">
-                <img class="img" src="img/mobile.svg" alt="Foto principal">
+            <div class="img-header">
+                <img src="img/logo.png" alt="Foto principal">
             </div>
         </div>
     </header>
@@ -46,14 +52,14 @@
         <section class="me" id="about">
             <div class="grid">
                 <div class="text-me">
-                    <h1 class="weight-800 title-me reveal">
-                        Me presento. <i class="fas fa-address-card"></i>
+                    <h1 class="weight-800 title-me reveal2">
+                        who we are? <i class="fas fa-address-card"></i>
                     </h1>
-                    <p class="parrafo p-me reveal2">Soy estudiante de <span>Ingeniería en Computación</span> en la Facultad de Ingeniería y en la Facultad de Informática de la UNLP. Para desarrollar el <span>frontend</span> de tu sitio web utilizo tecnologías como HTML, CSS, Bootstrap, SASS, JavaScript y React. También podemos construir el <span>backend</span> de tu sitio utilizando PHP, Node.JS y el sistema de gestión de bases de datos MySQL.</p>
-                    <p class="p-me reveal2">A continuación te dejo tres simples pasos para que <span>construyamos juntos tu nuevo proyecto!</span></p>
+                    <p class="parrafo p-me reveal">We are a team born in the <span>heart of Buenos Aires, Argentina</span>. Our mission is to <span>digitally transforming</span> startups, companies or your small healthy food venture, providing software solutions. We do it with love, passion and hard work.</p>
+                    <p class="p-me reveal2"><span>Power</span> your business, <span>achieve</span> a global reach, <span>grow</span> without limits, <span>now</span>.</p>
                 </div>
                 <div class="img-me">
-                    <img class="img imagen" src="img/student.svg" alt="Estudiante">
+                    <img class="img imagen" src="img/teamwork.svg" alt="Estudiante">
                 </div>
             </div>
         </section>
@@ -63,18 +69,18 @@
                 <div class="items">
                     <div class="item i-2">
                         <i class="fas fa-comments"></i>
-                        <h3 class="titulo-services">1ro. Contactame.</h3>
-                        <p>A través de Gmail, Instagram, o Linkedin.</p>
+                        <h3 class="titulo-services">1st. Contact us.</h3>
+                        <p>Through Gmail or LinkedIn.</p>
                     </div>
                     <div class="item i-1">
                         <i class="fas fa-project-diagram"></i>
-                        <h3 class="titulo-services">2do. Cuentame más.</h3>
-                        <p>Le daremos forma al proyecto.</p>
+                        <h3 class="titulo-services">2nd. Tell us more.</h3>
+                        <p>We'll shape the project.</p>
                     </div>
                     <div class="item i-3">
                         <i class="fas fa-rocket"></i>
-                        <h3 class="titulo-services">3ro. Lo lanzamos!</h3>
-                        <p>Creamos tu sitio web y lo subimos a internet.</p>
+                        <h3 class="titulo-services">3rd. We launched!</h3>
+                        <p>We create your website and upload it.</p>
                     </div>
                 </div>
             </section>
@@ -84,8 +90,8 @@
         <section class="section">
             <div class="grid">
                 <div class="textos-section">
-                    <h2 class="subtitulo">ASÍ DE SIMPLE!</h2>
-                    <p class="parrafo">Es un sistema ágil, creativo e innovador, que se adapta a todo tipo de dispositivos (computadores, móviles y tablets), para atraer e impactar potenciales clientes.</p>
+                    <h2 class="subtitulo">JUST LIKE THAT!</h2>
+                    <p class="parrafo">It's an agile, creative and innovative system, which adapts to all types of devices (computers, mobiles and tablets), to attract and impact potential customers.</p>
                 </div>
                 <div class="numbers">
                     <div class="number">0000</div>
@@ -100,8 +106,8 @@
         <section class="responsive grid">
             <div class="textos-responsive">
                 <div class="texto-responsive">
-                    <h3 class="text-responsive reveal2">Responsive web design.</h3>
-                    <p class="p-responsive reveal">El diseño web adaptable es una <span>filosofía</span> de diseño y desarrollo cuyo objetivo es <span>adaptar</span> la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en <span>multitud de dispositivos</span> como tablets, smartphones, libros electrónicos, portátiles, PC, etcétera. Esta tecnología pretende que con un <span>único diseño web</span>, todo se vea correctamente en <span>cualquier dispositivo.</span></p>
+                    <h3 class="text-responsive reveal2">responsive web design.</h3>
+                    <p class="p-responsive reveal">This refers to a design and development <span>philosophy</span> that aims to <span>adapt</span> the appearance of web pages to the device being used to visit them. Today, web pages are seen in a <span>multitude of devices</span> such as tablets, smartphones, e-books, laptops, PCs, etc. This technology pretends that with a <span>unique web design</span>, everything can be seen correctly in <span>any device</span>.</p>
                 </div>
             </div>
             <div class="img-responsive">
@@ -113,33 +119,33 @@
         <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191919" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,160C672,149,768,75,864,53.3C960,32,1056,64,1152,85.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
 
-        <section class="marketing">
+        <section id="reasons" class="marketing">
             <div class="texts-m">
-                <h1 class="title-marketing">5 razones para tener un sitio web.</h1>
+                <h1 class="title-marketing">five reasons to have a website.</h1>
                 <span class="number-m" id="number-m1">1</span>
                 <div class="cont-m">
-                    <h2 class="title-m reveal3">Tu competencia tiene un sitio web<i class="fas fa-balance-scale-right"></i></h2>
-                    <p class="text-m reveal2">Todo se trata de tomar ventaja del mercado y no quedarse atrás. Si ellos tienen una herramienta que tú no, simplemente podrán ofrecer más opciones innovadoras y atractivas a los consumidores.</p>
+                    <h2 class="title-m reveal3">your competition has a website<i class="fas fa-balance-scale-right"></i></h2>
+                    <p class="text-m reveal2">It's all about taking advantage of the market and not getting left behind. If they have a tool that you don't, they can simply offer more innovative and attractive options to consumers.</p>
                 </div>
                 <span class="number-m" id="number-m2">2</span>
                 <div class="cont-m">
-                    <h2 class="title-m reveal3">Accesibilidad para todos<i class="fas fa-universal-access"></i></h2>
-                    <p class="text-m reveal2">No todas las personas poseen una red social. No todas las personas tienen la posibilidad de desplazarse hasta un local físico. Un sitio web permite a los consumidores estar a un click de distancia desde la comodidad de su computadora, tablet o celular.</p>
+                    <h2 class="title-m reveal3">accessibility for all<i class="fas fa-universal-access"></i></h2>
+                    <p class="text-m reveal2">Not everyone has a social network. Not all people have the possibility of moving to a physical location. A website allows consumers to be one click away from the comfort of their computer, tablet or cell phone.</p>
                 </div>
                 <span class="number-m" id="number-m3">3</span>
                 <div class="cont-m">
-                    <h2 class="title-m reveal3">Mejora la comunicación con los clientes<i class="far fa-paper-plane"></i></h2>
-                    <p class="text-m reveal2">Información de productos, servicios, disponibilidad y precios, son las preguntas frecuentes de cualquier negocio. Una plataforma web te permite mantener esta informacion siempre al alcance de las personas.</p>
+                    <h2 class="title-m reveal3">improves communication with clients<i class="far fa-paper-plane"></i></h2>
+                    <p class="text-m reveal2">Information on products, services, availability and prices, are the frequently asked questions of any business. A web platform allows you to keep this information always available to people.</p>
                 </div>
                 <span class="number-m" id="number-m4">4</span>
                 <div class="cont-m">
-                    <h2 class="title-m reveal3">Automatización de procesos<i class="fas fa-robot"></i></h2>
-                    <p class="text-m reveal2">Todo puede ocurrir de manera automática. Pagos, órdenes, manejo de inventario, entre otros. Son algunas de las cosas que podrás olvidar para invertir más tiempo en la calidad de tus productos o servicios.</p>
+                    <h2 class="title-m reveal3">process automation<i class="fas fa-robot"></i></h2>
+                    <p class="text-m reveal2">Everything can happen automatically. Payments, orders, inventory management, among others. These are some of the things you can forget to invest more time in the quality of your products or services.</p>
                 </div>
                 <span class="number-m" id="number-m5">5</span>
                 <div class="cont-m">
-                    <h2 class="title-m reveal3">Alcanza nuevos mercados<i class="fas fa-search-dollar"></i></h2>
-                    <p class="text-m reveal2">Una vez inviertes en una plataforma web, ya no eres un pequeño negocio, ahora tienes el potencial de ser visto por millones de usuarios alrededor del mundo.</p>
+                    <h2 class="title-m reveal3">reach new markets<i class="fas fa-search-dollar"></i></h2>
+                    <p class="text-m reveal2">Once you invest in a web platform, you are no longer a small business, you now have the potential to be seen by millions of users around the world.</p>
                 </div>
             </div>
         </section>
@@ -150,7 +156,7 @@
     <footer id="contact">
         <div class="grid">
             <div class="textos-footer">
-                <h2 class="subtitulo">Contactame.</h2>
+                <h2 class="subtitulo">Contact me.</h2>
             </div>
             <div class="footer-item-1">
                 <a target="_blank" href="https://www.instagram.com/franciscogallom/?hl=es-la"><i class="fab fa-instagram"></i></a>

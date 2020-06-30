@@ -7,6 +7,8 @@
     .title-marketing {
         font-size: 75px;
         color: $color2;
+        line-height: 1em;
+        padding: 100px 0;
     }
 
     .cont-m {
@@ -23,6 +25,7 @@
         text-shadow: 2px 2px 2px $color1;
         font-size: 50px;
         color: $color3;
+        line-height: 1.1em;
 
         i {
             margin-left: 15px;
@@ -30,6 +33,7 @@
     }
 
     .text-m {
+        padding: 5px;
         margin: 10px 22%;
         color: $color2;
     }

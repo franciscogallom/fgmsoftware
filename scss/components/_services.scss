@@ -23,6 +23,12 @@
     text-align: center;
     transition: all 1s ease-in-out;
 
+    i {
+        font-size: 50px;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+
     &:hover {
         scale: (1.01);
         transform: translateY(-25px);
@@ -38,11 +44,11 @@
     }
 }
 
-[class^="fas fa"] { /* todos los elementos con la clase far fa*/
-    font-size: 50px;
-    text-align: center;
-    transition: all 1s ease-in-out;
-}
+// [class^="fas fa"] { /* todos los elementos con la clase far fa*/
+//     font-size: 50px;
+//     text-align: center;
+//     transition: all 1s ease-in-out;
+// }
 
 .titulo-services {
     margin: 20px 0;

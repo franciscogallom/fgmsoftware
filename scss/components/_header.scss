@@ -1,27 +1,29 @@
 .header {
     height: 600px;
-    background: linear-gradient(60deg, $color1 50%, $color2 50%);
+    background: linear-gradient(55deg, $color1 50%, $color2 50%);
 }
 
-.img-hero {
-    width: 100%;
-    height: auto;
-    grid-column: 8/13;
+.img-header {
+    grid-column: 10/13;
+    animation: beat 1s infinite alternate ease-in-out;
 }
 
-.textos-hero {
+@keyframes beat {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#text-h {
+    font-size: 50px;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.textos-header {
     color: $color3;
     grid-column: 1/7;
     padding-right: 50px;
-
-    p {
-        margin-top: .5em;
-        text-align: justify;
-    }
-
-    #who {
-        color: $color1;
-    }
 }
 
 .cta {
@@ -35,24 +37,11 @@
     border-radius: 5px;
     border: 1px solid $color3;
     transition: all .3s ease-in;
+    box-shadow: 2px 2px 5px $color3; 
 
     &:hover {
         background: $color3;
         color: $color1;
-        transform: rotate(-4deg);
-    }
-}
-
-#btn-show {
-    font-family: 'Poppins', sans-serif;;
-    margin-left: 20px;
-    background: $color1;
-    color: $color3;
-    border: 1px solid $color1;
-    transition: all .5s ease-in;
-    cursor: pointer;
-
-    &:hover {
-        scale: 1.1;
+        transform: rotate(-2deg);
     }
 }

@@ -1,27 +1,66 @@
 .navbar {
+    z-index: 10;
+    display: inline;
     position: fixed;
-    height: 40px;
-    top: 10px;
-    left: 39.75%;
-    background-color: transparent;
+    overflow: hidden;
+    width: 385px;
+    left: 35.5%;
     border-radius: 10px;
-    z-index: 50;
+    top: 10px;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        cursor: pointer;
+        transition: 1s;
+        list-style: none;
+        display: inline;
+        margin: 10px;
+
+        &:hover .nav-item {
+            transform: translateX(-50px);
+            opacity: 1;
+            pointer-events: visible;
+        }
+
+        &:hover i {
+            transform: translate(-25px);
+        }
+    }
 }
 
-.nav-item i {
+.nav-item {
+    position: absolute;
+    text-decoration: none;
     color: $color1;
-    margin: 10px 25px;
-    font-size: 20px;
-    transition: all .4s ease-in-out;
-    
-    &:hover {
-        scale: (1.2);
-        transform: rotate(360deg);
+    opacity: 0;
+    transform: translateX(-70px);
+    margin: 0 5px;
+    font-size: 15px;
+    transition: 1s all;
+}
+
+li i {
+    font-size: 22px;
+    margin: 0 25px;
+    transition: 1s all;
+
+
+    &:hover .nav-item {
+        opacity: 1;
     }
 }
 
 .change-color {
-    // background-image: linear-gradient(to right, #43e97b 0%, $color3 100%);
-    background: $color3;
-    opacity: 80%;
+    background-image: linear-gradient(to right, #43e97b 0%, $color3 100%);
+    opacity: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .navbar {
+        display: none;
+    }
 }

@@ -12,6 +12,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+    .body::-webkit-scrollbar {
+        width: 10px;
+        background: $color1;
+    }
+
+    .body::-webkit-scrollbar-thumb {
+        background: $color3;
+        border-radius: 2.5px;
+        box-shadow: 0 5px 10px $color3, 0 -5px 10px $color3;
+        height: 50px;
+    }
+
 .weight-600 {
     font-weight: 600;
 }
@@ -31,18 +43,13 @@ body {
     max-width: 400px;
 }
 
-@media screen and (max-width: 1000px) {
-    nav {
-        display: none;
-    }
-}
 
 @import 'components/scrollTr';
 @import 'components/grid';
-@import 'components/nav';
 @import 'components/header';
 @import 'components/me';
 @import 'components/services';
+@import 'components/nav';
 @import 'components/section';
 @import 'components/responsive';
 @import 'components/marketing';
