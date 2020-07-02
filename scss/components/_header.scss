@@ -36,7 +36,9 @@
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid $color3;
-    transition: all .3s ease-in;
+    transition-duration: .3s;
+    transition-property: background-color, color, transform;
+    transition-timing-function: ease-in;
     box-shadow: 2px 2px 5px $color3; 
 
     &:hover {

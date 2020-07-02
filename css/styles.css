@@ -147,7 +147,9 @@ body {
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid #cf0;
-  transition: all 0.3s ease-in;
+  transition-duration: 0.3s;
+  transition-property: background-color, color, transform;
+  transition-timing-function: ease-in;
   box-shadow: 2px 2px 5px #cf0;
 }
 .cta:hover {
@@ -530,6 +532,6 @@ footer {
   }
 
   .svg-footer {
-    width: 100%;
+    width: 100vw;
   }
 }
