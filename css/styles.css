@@ -39,6 +39,14 @@ body {
   max-width: 400px;
 }
 
+.text-neon {
+  text-shadow: 0 0 10px #cf0, 0 0 20px #cf0, 0 0 40px #cf0, 0 0 80px #cf0, 0 0 120px #cf0;
+}
+
+.text-neon-2 {
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 20px #fff, 0 0 120px #fff;
+}
+
 .title-me, .title-m, .text-responsive {
   position: relative;
   transform-origin: left;
@@ -105,7 +113,6 @@ body {
   margin: auto;
   gap: 10px;
   /* espacio entre las columnas */
-  overflow: hidden;
   align-items: center;
 }
 
@@ -125,9 +132,9 @@ body {
   }
 }
 #text-h {
-  font-size: 50px;
+  font-size: 3em;
   line-height: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .textos-header {
@@ -138,7 +145,7 @@ body {
 
 .cta {
   width: 130px;
-  background: #191919;
+  background: transparent;
   color: #cf0;
   display: inline-block;
   /* si tiene propiedas de linea no podemos dar padding ni width */
@@ -243,9 +250,8 @@ body {
 
 .navbar {
   z-index: 10;
-  display: inline;
+  display: inline-block;
   position: fixed;
-  overflow: hidden;
   width: 385px;
   left: 35.5%;
   border-radius: 10px;
@@ -371,7 +377,8 @@ li i:hover .nav-item {
   font-size: 75px;
   color: #fff;
   line-height: 1em;
-  padding: 100px 0;
+  padding: 100px 20px;
+  text-shadow: 4px 4px #cf0;
 }
 .marketing .cont-m {
   margin: 100px 0;
@@ -379,7 +386,6 @@ li i:hover .nav-item {
 .marketing .number-m {
   font-size: 150px;
   color: #cf0;
-  text-shadow: 1px 1px 20px #cf0;
 }
 .marketing .title-m {
   text-shadow: 2px 2px 2px #191919;
@@ -422,7 +428,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .header {
-    height: auto;
+    height: 500px;
     background: #191919;
     padding-bottom: 50px;
   }
@@ -431,13 +437,8 @@ footer {
     grid-gap: 30px;
   }
 
-  .img-header, .textos-header {
-    /* que se ponga uno abajo del otro */
-    grid-column: 1/-1;
-  }
-
   .img-header {
-    text-align: center;
+    display: none;
   }
 
   .textos-header {
@@ -499,7 +500,7 @@ footer {
     max-width: 170px;
   }
 
-  .img-header, .img-me {
+  .img-me {
     display: none;
   }
 
@@ -527,11 +528,17 @@ footer {
     grid-column: 1/-1;
   }
 
+  .marketing .title-marketing {
+    font-size: 50px;
+  }
+  .marketing .title-m {
+    font-size: 35px;
+  }
   .marketing .text-m {
     margin: 10px 5%;
   }
 
   .svg-footer {
-    width: 100vw;
+    display: none;
   }
 }

@@ -43,6 +43,21 @@ body {
     max-width: 400px;
 }
 
+.text-neon {
+    text-shadow:    0 0 10px $color3,
+                    0 0 20px $color3,
+                    0 0 40px $color3,
+                    0 0 80px $color3,
+                    0 0 120px $color3;
+}
+
+.text-neon-2 {
+        text-shadow:    0 0 10px $color2,
+        0 0 40px $color2,
+        0 0 80px $color2,
+        0 0 20px $color2,
+        0 0 120px $color2;
+}
 
 @import 'components/scrollTr';
 @import 'components/grid';

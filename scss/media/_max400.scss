@@ -11,7 +11,7 @@
         max-width: 170px;
     }
 
-    .img-header, .img-me {
+    .img-me {
         display: none;
     }
 
@@ -38,11 +38,22 @@
         grid-column: 1/-1;
     }
 
-    .marketing .text-m {
-        margin: 10px 5%;
+    .marketing {
+    
+        .title-marketing {
+            font-size: 50px;
+        }
+
+        .title-m {
+            font-size: 35px;
+        }
+
+        .text-m {
+            margin: 10px 5%;
+        }
     }
 
     .svg-footer {
-        width: 100vw;
+        display: none;
     }
 }

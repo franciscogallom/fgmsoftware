@@ -15,9 +15,9 @@
 }
 
 #text-h {
-    font-size: 50px;
+    font-size: 3em;
     line-height: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .textos-header {
@@ -28,7 +28,7 @@
 
 .cta {
     width: 130px;
-    background: $color1;
+    background: transparent;
     color: $color3;
     display: inline-block; /* si tiene propiedas de linea no podemos dar padding ni width */
     text-align: center;

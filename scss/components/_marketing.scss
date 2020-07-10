@@ -8,7 +8,8 @@
         font-size: 75px;
         color: $color2;
         line-height: 1em;
-        padding: 100px 0;
+        padding: 100px 20px;
+        text-shadow: 4px 4px $color3;
     }
 
     .cont-m {
@@ -18,7 +19,6 @@
     .number-m{
         font-size: 150px;
         color: $color3;
-        text-shadow: 1px 1px 20px $color3;
     }
 
     .title-m {
