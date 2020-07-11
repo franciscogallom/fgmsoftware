@@ -1,6 +1,7 @@
 .service {
     height: 370px;
     background: linear-gradient(180deg, $color2 50%, $color1 50%);
+    overflow: hidden;
 }
 
 .items {

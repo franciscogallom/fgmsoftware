@@ -2,18 +2,19 @@
 
 // TYPING
 
-// let i=0;
-// let text = 'website development to boost your business.'
+let i=0;
+let text = "Hello everyone! I'm a software passionate, university student, self-taught, entrepreneur and CEO of FGM, a company with the ability to change your business and your life in a simple and fast way. Everything I do, I do with passion, love, hard work and effort. Are you ready?"
+let textF = document.getElementById('text-founder');
 
-// function typing() {
-//     if (i<text.length) {
-//         document.getElementById('text-h').innerHTML += text.charAt(i);
-//         i++;
-//         setTimeout(typing,75)
-//     }
-// }
+function typing() {
+    if (i<text.length) {
+        textF.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,70)
+    }
+}
 
-// typing();
+typing();
 
 // TYPING
 
@@ -43,7 +44,8 @@ $(window).on('scroll', function(){
     else {
         $('nav').removeClass ('change-color');
     }
-}) 
+})
+
 
 // CHANGE NAVBAR
 
@@ -111,3 +113,89 @@ reveal6.forEach((text, i) => {
 })
 
 // SCROLL TRIGER
+
+
+// SCROLL REVEAL
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.img-header', {
+            duration: 5000,
+            distance: '300px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.img-me', {
+            duration: 4000,
+            origin: 'left',
+            distance: '400px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.img-responsive', {
+            duration: 4000,
+            origin: 'left',
+            distance: '400px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.number-m', {
+            duration: 4000,
+            origin: 'bottom',
+            distance: '500px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.footer-item-1', {
+            duration: 4000,
+            origin: 'top',
+            distance: '-20px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.footer-item-2', {
+            duration: 4000,
+            origin: 'top',
+            delay: '1000',
+            distance: '-20px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.footer-item-3', {
+            duration: 4000,
+            origin: 'top',
+            delay: '2000',
+            distance: '-20px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.footer-item-4', {
+            duration: 4000,
+            origin: 'top',
+            delay: '3000',
+            distance: '-20px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.i-2', {
+            duration: 2000,
+            origin: 'right',
+            distance: '1000px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.i-1', {
+            duration: 2000,
+            origin: 'right',
+            delay: '1000',
+            distance: '1000px'
+});
+
+window.sr = ScrollReveal ();
+        sr.reveal ('.i-3', {
+            duration: 2000,
+            origin: 'right',
+            delay: '2000',
+            distance: '1000px'
+});
+
+// SCROLL REVEAL

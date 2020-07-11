@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 .body::-webkit-scrollbar {
@@ -197,6 +198,7 @@ body {
 .service {
   height: 370px;
   background: linear-gradient(180deg, #fff 50%, #191919 50%);
+  overflow: hidden;
 }
 
 .items {
@@ -250,10 +252,9 @@ body {
 
 .navbar {
   z-index: 10;
-  display: inline-block;
   position: fixed;
   width: 385px;
-  left: 35.5%;
+  left: 34.6%;
   border-radius: 10px;
   top: 10px;
 }
@@ -369,7 +370,7 @@ li i:hover .nav-item {
 
 .marketing {
   text-align: center;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   background: #191919;
   margin-top: 20px;
 }
@@ -400,6 +401,46 @@ li i:hover .nav-item {
   padding: 5px;
   margin: 10px 22%;
   color: #fff;
+}
+
+.founder {
+  background: #191919;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.container-founder {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(180deg, #cf0 50%, #fff 50%);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.container-founder img {
+  height: 150px;
+  width: 150px;
+  -webkit-clip-path: circle(75px at center);
+          clip-path: circle(75px at center);
+}
+.container-founder .name-founder {
+  margin-top: 15px;
+}
+.container-founder .text-founder {
+  margin-top: 20px;
+}
+.container-founder .back-founder {
+  font-style: italic;
+  left: -475px;
+  position: absolute;
+  font-size: 85px;
+  -webkit-text-stroke: 2px #cf0;
+  display: block;
+  width: 1240px;
+  z-index: 0;
 }
 
 footer {
@@ -472,6 +513,10 @@ footer {
   h3, p {
     text-align: center;
   }
+
+  .svg-footer {
+    display: none;
+  }
 }
 @media screen and (max-width: 700px) {
   .img-me, .text-me {
@@ -536,9 +581,5 @@ footer {
   }
   .marketing .text-m {
     margin: 10px 5%;
-  }
-
-  .svg-footer {
-    display: none;
   }
 }

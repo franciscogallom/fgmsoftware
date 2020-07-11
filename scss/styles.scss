@@ -10,6 +10,7 @@ $color3: #cf0;
 
 body {
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
     .body::-webkit-scrollbar {
@@ -68,6 +69,7 @@ body {
 @import 'components/section';
 @import 'components/responsive';
 @import 'components/marketing';
+@import 'components/founder';
 @import 'components/footer';
 @import 'media/max800';
 @import 'media/max700';
