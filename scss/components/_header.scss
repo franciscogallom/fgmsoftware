@@ -27,12 +27,11 @@
 }
 
 .cta {
-    width: 130px;
     background: transparent;
     color: $color3;
     display: inline-block; /* si tiene propiedas de linea no podemos dar padding ni width */
     text-align: center;
-    padding: 10px 0;
+    padding: 8px;
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid $color3;
